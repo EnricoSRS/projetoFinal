@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="icon" href="../imagens/icon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <button class="btnUm" onclick="window.location.href='paginainicial.html'">Voltar para o Menu</button>
+
+    <h1>Area de Cadastro</h1>
+
+   <button class="btnDois" onclick="window.location.href='visualizar.html'">Visualizar estoque</button>
+</header>
+
+<form id="Form">
+
+  <h1>Cadastro de Produtos</h1>
+
+  <label for="nomeProduto">Nome do Produto:</label>
+  <input type="text" id="nomeProduto" placeholder="Digite o nome do produto" required><br><br>
+
+  <label for="quantidade">Quantidade:</label>
+  <input type="number" id="quantidade" placeholder="Digite a Quantidade" required><br><br>
+
+  <label for="preco">Preço:</label>
+  <input type="number" step="0.01" id="preco" placeholder="Digite o Preço" required><br><br>
+
+  <button type="button" id="addButton">Adicionar</button>
+</form>
+
+<div id="notification"></div>
+
+
+<script src="../js/script.js"></script>
+</body>
+</html>
